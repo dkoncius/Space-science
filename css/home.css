@@ -1,0 +1,95 @@
+body {
+    height: 100vh;
+    background: url(../assets/space-banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    overflow: hidden;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10vw;
+    height: 100%;
+    max-width: 100vh;
+    margin: auto;
+    padding: 0 30px;
+}
+
+#home > div {
+    width: 50%;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    position: relative;
+    right: 2vw;
+    font-size: 15vw;
+    font-weight: 500;
+}
+
+.heading h2 {
+    position: relative;
+    right: 2vw;
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+.data {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+    gap: 30px;
+    width: 90%;
+    margin-bottom: 100px;
+}
+
+.objects {
+    position: relative;
+    z-index: -1;
+}
+
+.objects img {
+    position: absolute;
+}
+
+.objects img:nth-of-type(1){
+    top: -10vh;
+    left: -20vw;
+}
+
+.objects img:nth-of-type(2){
+    top: -50vh;
+    left: -55vw;
+}
+
+.objects img:nth-of-type(3){
+    top: -50vh;
+    right: 20vw; 
+}
+
+.objects img:nth-of-type(4){
+    top: -20vh;
+    left: -40vw; 
+}
+
+.objects img:nth-of-type(5){
+    top: -40vh;
+    right: -5vw; 
+}
+
+.objects img:nth-of-type(6){
+    top: 10vh;
+    left: -50vw; 
+}
+
+.objects img:nth-of-type(7){
+    top: -20vh;
+    right: -10vw; 
+}

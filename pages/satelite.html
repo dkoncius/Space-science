@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space science: satelite page</title>
+    <!-- Icon -->
+    <link rel="icon" href="../assets/icon.png" sizes="32x32">
+    
+    <!-- Google fonts: roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/satelite.css">
+    <link rel="stylesheet" href="../css/meniu.css">
+    <link rel="stylesheet" href="../css/media.css">
+
+    <!-- Leaflet -->
+   <link  rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="" />
+   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin="">
+   </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a class="brand" href="home.html"><img src="../assets/icon.png" alt="icon"> Space science</a>
+        <ul class="links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="countdown.html">Countdown</a></li>
+            <li><a href="satelite.html">Satelite</a></li>
+        </ul>
+        <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </nav>
+
+     <!-- Palydovas -->
+    <section class="palydovas">
+        <div class="palydovoInformacija">
+            <h1>Kur yra ISS palydovas?</h1>
+            <div class="palydovoPozicija">
+            <p class="platuma">Platuma: <span id="lat"></span>5.00°</p>
+            <p class="ilguma">Ilguma: <span id="lon"></span>13.15°</p>
+            </div>
+        </div>
+        <div id="issMap"></div>
+    </section>
+
+    <script src="../scripts/satelite.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    height: 100vh;
+    background: url(../assets/space-banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    overflow: hidden;
+}
+
+#issMap {
+    width: 90%;
+    height: 60vh;
+    z-index: -1;
+    margin: auto;
+    box-shadow: 0 0 5px 2px white;
+    background: skyblue;
+}
+
+.palydovas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.palydovoInformacija {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    position: relative;
+    top: 120px;
+}
+
+.palydovoInformacija > h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 3em;
+}
+
+.palydovoPozicija {
+    display: flex;
+    justify-content: space-around;
+}
+  
+.palydovoPozicija p {
+    margin-bottom: 50px;
+}
+  
